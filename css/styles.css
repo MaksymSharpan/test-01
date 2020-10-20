@@ -22,6 +22,10 @@ ul {
   list-style: none;
 }
 
+.section {
+  /* outline: 1px solid grey; */
+}
+
 /* HEADER AND FOOTER LOGOTYPE*/
 
 .logo {
