@@ -5,6 +5,13 @@
 /* цвет футер контакты текст rgba(255, 255, 255, 0.6) */
 /* цвет наша команда фон #F5F4FA */
 
+html {
+  box-sizing: border-box;
+}
+*, *:: before, *::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -23,7 +30,7 @@ ul {
 }
 
 .section {
-  /* outline: 1px solid grey; */
+  outline: 1px solid grey;
 }
 
 /* HEADER AND FOOTER LOGOTYPE*/
