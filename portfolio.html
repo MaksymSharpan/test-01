@@ -14,89 +14,95 @@
     <header>
       <nav>
         <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#footer-address">Контакты</a></li>
+        <ul class="list">
+          <li><a href="./index.html" class="link-page">Студия</a></li>
+          <li><a href="./portfolio.html" class="link-page current">Портфолио</a></li>
+          <li><a href="#footer-address" class="link-page">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
+      <ul class="list">
+        <li><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
+        <li><a href="tel:380961111111" class="link-contacts">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <section>
-        <h1>Фильтры</h1>
-        <ul>
-          <li><button>Все</button></li>
-          <li><button>Веб-сайты</button></li>
-          <li><button>Приложения</button></li>
-          <li><button>Дизайн</button></li>
-          <li><button>Маркетинг</button></li>
+        <h1 hidden>Фильтры</h1>
+        <ul class="list">
+          <li><button class="filter-btn">Все</button></li>
+          <li><button class="filter-btn">Веб-сайты</button></li>
+          <li><button class="filter-btn">Приложения</button></li>
+          <li><button class="filter-btn">Дизайн</button></li>
+          <li><button class="filter-btn">Маркетинг</button></li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
-            <img src="./images/portfolio1.jpg" alt="" />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
+            <h2 class="company">Технокряк</h2>
+            <p class="company-filter">Веб-сайт</p>
           </li>
           <li>
-            <img src="./images/portfolio2.jpg" alt="" />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+            <h2 class="company">Постер New Orlean vs Golden Star</h2>
+            <p class="company-filter">Дизайн</p>
           </li>
           <li>
-            <img src="./images/portfolio3.jpg" alt="" />
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
+            <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
+            <h2 class="company">Ресторан Seafood</h2>
+            <p class="company-filter">Приложение</p>
           </li>
           <li>
-            <img src="./images/portfolio4.jpg" alt="" />
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
+            <img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" />
+            <h2 class="company">Проект Prime</h2>
+            <p class="company-filter">Маркетинг</p>
           </li>
           <li>
-            <img src="./images/portfolio5.jpg" alt="" />
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
+            <img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" />
+            <h2 class="company">Проект Boxes</h2>
+            <p class="company-filter">Приложение</p>
           </li>
           <li>
-            <img src="./images/portfolio6.jpg" alt="" />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
+            <h2 class="company">Inspiration has no Borders</h2>
+            <p class="company-filter">Веб-сайт</p>
           </li>
           <li>
-            <img src="./images/portfolio7.jpg" alt="" />
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
+            <img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370" />
+            <h2 class="company">Издание Limited Edition</h2>
+            <p class="company-filter">Дизайн</p>
           </li>
           <li>
-            <img src="./images/portfolio8.jpg" alt="" />
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
+            <img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" />
+            <h2 class="company">Проект LAB</h2>
+            <p class="company-filter">Маркетинг</p>
           </li>
           <li>
-            <img src="./images/portfolio9.jpg" alt="" />
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
+            <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
+            <h2 class="company">Growing Business</h2>
+            <p class="company-filter">Приложение</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer id="footer-address">
-      <a href="./index.html">WebStudio</a>
-      <address>
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/tncFJS4bmtnmpcFF8" target="_blank" rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
-    </footer>
+    <div class="footer-address">
+      <footer id="footer-address">
+        <a class="logo down" href="./index.html"><span class="web">Web</span>Studio</a>
+        <address>
+          <ul class="list">
+            <li>
+              <a
+                href="https://goo.gl/maps/tncFJS4bmtnmpcFF8"
+                class="link-contacts down address"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@devstudio.com" class="link-contacts down">info@devstudio.com</a></li>
+            <li><a href="tel:380961111111" class="link-contacts down">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>

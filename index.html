@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <!-- <style></style> инлайн стили-->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,51 +15,57 @@
     <header>
       <nav>
         <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#footer-address">Контакты</a></li>
+        <ul class="list">
+          <li><a href="./index.html" class="link-page current">Студия</a></li>
+          <li><a href="./portfolio.html" class="link-page">Портфолио</a></li>
+          <li><a href="#footer-address" class="link-page">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
+      <ul class="list">
+        <li><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
+        <li><a href="tel:380961111111" class="link-contacts">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!--HERO-->
       <div>
         <section>
-          <h1>Эффективные решения для вашего бизнеса</h1>
-          <button>Заказать услугу</button>
+          <h1 class="item">Эффективные решения для вашего бизнеса</h1>
+          <button class="button">Заказать услугу</button>
         </section>
       </div>
       <!--ОСОБЕННОСТИ-->
-      <section>
+      <section class="features">
         <h2 hidden>Особенности</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3 class="look">Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="item-features">Внимание к деталям</h3>
+            <p class="text-features">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
-            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <h3 class="item-features">Пунктуальность</h3>
+            <p class="text-features">
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            </p>
           </li>
           <li>
-            <h3>Планирование</h3>
-            <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <h3 class="item-features">Планирование</h3>
+            <p class="text-features">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <h3 class="item-features">Современные технологии</h3>
+            <p class="text-features">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </section>
       <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="section-heading">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <img src="./images/img-box1.jpg" width="370" alt="десктопные приложения" />
           </li>
@@ -71,14 +78,14 @@
         </ul>
       </section>
       <!--НАША КОМАНДА-->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <section class="team">
+        <h2 class="section-heading">Наша команда</h2>
+        <ul class="list">
           <li>
-            <img src="./images/img-command1.jpg" width="270" alt="" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
-            <ul>
+            <img src="./images/img-command1.jpg" width="270" alt="Product Designer" />
+            <h3 class="name">Игорь Демьяненко</h3>
+            <p class="work">Product Designer</p>
+            <ul class="list">
               <li>
                 <a href="https://google.com" target="_blank" rel="noopener noreferrer"
                   ><img src="hfhfhfh" alt="ссылка на инстаграм"
@@ -102,10 +109,10 @@
             </ul>
           </li>
           <li>
-            <img src="./images/img-command2.jpg" width="270" alt="" />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
-            <ul>
+            <img src="./images/img-command2.jpg" width="270" alt="Frontend Developer" />
+            <h3 class="name">Ольга Репина</h3>
+            <p class="work">Frontend Developer</p>
+            <ul class="list">
               <li>
                 <a href="https://google.com" target="_blank" rel="noopener noreferrer"
                   ><img src="hfhfhfh" alt="ссылка на инстаграм"
@@ -129,10 +136,10 @@
             </ul>
           </li>
           <li>
-            <img src="./images/img-command3.jpg" width="270" alt="" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
-            <ul>
+            <img src="./images/img-command3.jpg" width="270" alt="Marketing" />
+            <h3 class="name">Николай Тарасов</h3>
+            <p class="work">Marketing</p>
+            <ul class="list">
               <li>
                 <a href="https://google.com" target="_blank" rel="noopener noreferrer"
                   ><img src="hfhfhfh" alt="ссылка на инстаграм"
@@ -156,10 +163,10 @@
             </ul>
           </li>
           <li>
-            <img src="./images/img-command4.jpg" width="270" alt="" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
-            <ul>
+            <img src="./images/img-command4.jpg" width="270" alt="UI Designer" />
+            <h3 class="name">Михаил Ермаков</h3>
+            <p class="work">UI Designer</p>
+            <ul class="list">
               <li>
                 <a href="https://google.com" target="_blank" rel="noopener noreferrer"
                   ><img src="hfhfhfh" alt="ссылка на инстаграм"
@@ -186,30 +193,36 @@
       </section>
       <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
       <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <h2 class="section-heading">Постоянные клиенты</h2>
+        <ul class="list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
         </ul>
       </section>
     </main>
-    <footer id="footer-address">
-      <a href="./index.html">WebStudio</a>
-      <address>
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/tncFJS4bmtnmpcFF8" target="_blank" rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
-    </footer>
+    <div class="footer-address">
+      <footer id="footer-address">
+        <a class="logo down" href="./index.html"><span class="web">Web</span>Studio</a>
+        <address>
+          <ul class="list">
+            <li>
+              <a
+                href="https://goo.gl/maps/tncFJS4bmtnmpcFF8"
+                class="link-contacts down address"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@devstudio.com" class="link-contacts down">info@devstudio.com</a></li>
+            <li><a href="tel:380961111111" class="link-contacts down">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
