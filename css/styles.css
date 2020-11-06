@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --page-footer-color: #2f303a;
 }
+
 /* ВСЯ СТРАНИЦА */
 
 body {
@@ -26,9 +27,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* img {
-  display: block;
-} */
 .list {
   list-style: none;
   margin: 0;
@@ -93,7 +91,6 @@ p {
 .list.nav {
   margin-left: 93px;
 }
-
 .link-page:hover,
 .link-page:focus {
   color: var(--accent-color);
@@ -148,7 +145,6 @@ p {
 .link-contacts.address:focus {
   color: var(--accent-color);
 }
-
 .list.nav {
   display: flex;
 }
@@ -170,6 +166,7 @@ p {
 .list.address .link + .link {
   margin-left: 50px;
 }
+
 /* HERO */
 
 .section.hero {
@@ -206,6 +203,7 @@ p {
   display: inline-block;
   min-width: 200px;
 }
+
 /* ОСОБЕННОСТИ */
 
 .features {
@@ -217,7 +215,6 @@ p {
 
   margin-bottom: 10px;
 }
-
 .features-text {
   font-weight: 400;
   font-size: 14px;
@@ -239,6 +236,9 @@ p {
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
+.section.features {
+  padding-bottom: 0px;
+}
 .heading-text {
   font-weight: bold;
   font-size: 14px;
@@ -247,7 +247,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .list.heading {
   margin-left: -30px;
 }
@@ -256,6 +255,7 @@ p {
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
+
 /* НАША КОМАНДА */
 
 .section.team {
@@ -276,7 +276,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 .item-team img {
   padding-bottom: 30px;
@@ -292,6 +292,7 @@ p {
   margin-left: 30px;
   width: calc(100% / 4 - 30px);
 }
+
 /* ПОРТФОЛИО */
 
 .button {
@@ -315,7 +316,6 @@ p {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .list.portfolio {
   justify-content: center;
   margin-bottom: 50px;
@@ -323,7 +323,6 @@ p {
 .list.portfolio .item-portfolio + .item-portfolio {
   margin-left: 8px;
 }
-
 .item-content img {
   margin-bottom: 20px;
 }
@@ -340,13 +339,14 @@ p {
   margin-right: 0;
 }
 .company {
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   padding-left: 24px;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 .categories {
   color: var(--secondary-text-color);
@@ -357,4 +357,11 @@ p {
 
   padding-left: 24px;
   padding-bottom: 20px;
+}
+.link-content {
+  text-decoration: none;
+}
+.item-content:hover,
+.item-content:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
