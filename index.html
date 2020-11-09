@@ -62,7 +62,7 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button class="button-hero">Заказать услугу</button>
+					<button class="button-hero" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
@@ -404,10 +404,10 @@
 		</footer>
 
 		<!-- MODALKA -->
-		<div class="backdrop is-hidden">
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<!-- <div class="button-posicion"> -->
-				<button class="button-close">
+				<button class="button-close" data-modal-close>
 					<svg class="icon-close" width="18px" height="18px">
 						<use href="./images/icon-2/sprite.svg#icon-close"></use>
 					</svg>
@@ -415,5 +415,6 @@
 			</div>
 			<!-- </div> -->
 		</div>
+		<script src="./modal.js"></script>
 	</body>
 </html>
