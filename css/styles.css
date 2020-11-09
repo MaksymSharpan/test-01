@@ -230,6 +230,8 @@ img {
 	top: 8px;
 	padding: 0px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+
+	transition: fill var(--duration) var(--timming-function);
 }
 .button-close:hover,
 .button-close:focus {
@@ -553,7 +555,7 @@ img {
 .position-container {
 	position: absolute;
 	transform: translateY(100%);
-	transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--duration) var(--timming-function);
 	top: 0;
 	left: 0;
 	width: 100%;
