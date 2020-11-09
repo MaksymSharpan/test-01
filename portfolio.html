@@ -1,147 +1,234 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Портфолио</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
 
-  <!-- ШАПКА -->
+	<!-- ШАПКА -->
 
-  <body>
-    <header class="header-page">
-      <div class="container header">
-        <nav class="navigation">
-          <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
-          <ul class="list nav">
-            <li class="link"><a href="./index.html" class="link-page">Студия</a></li>
-            <li class="link"><a href="./portfolio.html" class="link-page current">Портфолио</a></li>
-            <li class="link"><a href="#footer" class="link-page">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="list address">
-          <li class="link"><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
-          <li class="link"><a href="tel:380961111111" class="link-contacts">+38 096 111 11 11</a></li>
-        </ul>
-      </div>
-    </header>
+	<body>
+		<header class="header-page">
+			<div class="container header">
+				<nav class="navigation">
+					<a class="logo" href="./index.html">
+						<span class="web">Web</span>
+						Studio
+					</a>
+					<ul class="list nav">
+						<li class="link"><a href="./index.html" class="link-page">Студия</a></li>
+						<li class="link"><a href="./portfolio.html" class="link-page current">Портфолио</a></li>
+						<li class="link"><a href="#footer" class="link-page">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="list address up">
+					<li class="link">
+						<a href="mailto:info@devstudio.com" class="link-contacts up">
+							<svg class="icon-address" width="16px" height="12px">
+								<use href="./images/icon/sprite.svg#icon-mail"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="link">
+						<a href="tel:380961111111" class="link-contacts up">
+							<svg class="icon-address" width="10px" height="16px">
+								<use href="./images/icon/sprite.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
 
-    <!-- MAIN -->
+		<!-- MAIN -->
 
-    <main>
-      <section class="section">
-        <div class="container portfolio">
-          <h1 hidden>Категории</h1>
-          <ul class="list portfolio">
-            <li class="item-portfolio"><button class="button">Все</button></li>
-            <li class="item-portfolio"><button class="button">Веб-сайты</button></li>
-            <li class="item-portfolio"><button class="button">Приложения</button></li>
-            <li class="item-portfolio"><button class="button">Дизайн</button></li>
-            <li class="item-portfolio"><button class="button">Маркетинг</button></li>
-          </ul>
-          <ul class="list content">
-            <li class="item-content">
-              <a href="./index.html" class="link-content">
-                <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
-                <h2 class="company">Технокряк</h2>
-                <p class="categories">Веб-сайт</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
-                <h2 class="company">Постер New Orlean vs Golden Star</h2>
-                <p class="categories">Дизайн</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
-                <h2 class="company">Ресторан Seafood</h2>
-                <p class="categories">Приложение</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" />
-                <h2 class="company">Проект Prime</h2>
-                <p class="categories">Маркетинг</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" />
-                <h2 class="company">Проект Boxes</h2>
-                <p class="categories">Приложение</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
-                <h2 class="company">Inspiration has no Borders</h2>
-                <p class="categories">Веб-сайт</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370" />
-                <h2 class="company">Издание Limited Edition</h2>
-                <p class="categories">Дизайн</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" />
-                <h2 class="company">Проект LAB</h2>
-                <p class="categories">Маркетинг</p></a
-              >
-            </li>
-            <li class="item-content">
-              <a href="" class="link-content">
-                <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
-                <h2 class="company">Growing Business</h2>
-                <p class="categories">Приложение</p></a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+		<main>
+			<section class="section portfolio">
+				<div class="container portfolio">
+					<h1 hidden>Категории</h1>
+					<ul class="list portfolio">
+						<li class="item-portfolio"><button class="button">Все</button></li>
+						<li class="item-portfolio"><button class="button">Веб-сайты</button></li>
+						<li class="item-portfolio"><button class="button">Приложения</button></li>
+						<li class="item-portfolio"><button class="button">Дизайн</button></li>
+						<li class="item-portfolio"><button class="button">Маркетинг</button></li>
+					</ul>
+					<ul class="list content">
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div class="position portfolio">
+									<img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
+									<div class="position-text">
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga officiis sunt dolorem, harum saepe
+											quibusdam doloribus, quis quia distinctio omnis quaerat expedita labore fugiat velit vitae non eos
+											obcaecati magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error minima nemo quod
+											non rem ab iste? Ea voluptatem fugiat, atque, quia numquam magnam possimus quaerat qui itaque
+											earum minus neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus magnam
+											veritatis! Eaque natus, totam facere asperiores eius qui et temporibus, quae, quia quod nostrum
+											commodi ipsum quam necessitatibus quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										</p>
+									</div>
+								</div>
+								<div class="text-content">
+									<h2 class="company">Технокряк</h2>
+									<p class="categories">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Постер New Orlean vs Golden Star</h2>
+									<p class="categories">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Ресторан Seafood</h2>
+									<p class="categories">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Проект Prime</h2>
+									<p class="categories">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Проект Boxes</h2>
+									<p class="categories">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Inspiration has no Borders</h2>
+									<p class="categories">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Издание Limited Edition</h2>
+									<p class="categories">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Проект LAB</h2>
+									<p class="categories">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="" class="link-content">
+								<div><img src="./images/portfolio9.jpg" alt="Growing Business" width="370" /></div>
+								<div class="text-content">
+									<h2 class="company">Growing Business</h2>
+									<p class="categories">Приложение</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
 
-    <!-- FOOTER -->
+		<!-- FOOTER -->
 
-    <footer class="footer-page" id="footer">
-      <div class="container footer">
-        <div class="logo-footer">
-          <a class="logo down" href="./index.html"><span class="web">Web</span>Studio</a>
-        </div>
-        <address>
-          <ul class="list">
-            <li class="link-down">
-              <a
-                href="https://goo.gl/maps/tncFJS4bmtnmpcFF8"
-                class="link-contacts address"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="link-down">
-              <a href="mailto:info@devstudio.com" class="link-contacts down">info@devstudio.com</a>
-            </li>
-            <li class="link-down"><a href="tel:380961111111" class="link-contacts down">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-      </div>
-    </footer>
-  </body>
+		<footer class="footer-page" id="footer">
+			<div class="container footer">
+				<div class="address-footer">
+					<div class="logo-footer">
+						<a class="logo down" href="./index.html">
+							<span class="web">Web</span>
+							Studio
+						</a>
+					</div>
+					<address>
+						<ul class="list">
+							<li class="link-down">
+								<a
+									href="https://goo.gl/maps/tncFJS4bmtnmpcFF8"
+									class="link-contacts address"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									г. Киев, пр-т Леси Украинки, 26
+								</a>
+							</li>
+							<li class="link-down">
+								<a href="mailto:info@devstudio.com" class="link-contacts down">info@devstudio.com</a>
+							</li>
+							<li class="link-down"><a href="tel:380961111111" class="link-contacts down">+38 096 111 11 11</a></li>
+						</ul>
+					</address>
+				</div>
+				<div class="social-footer">
+					<h2 class="features-head">Присоединяйтесь</h2>
+					<ul class="list social footer">
+						<li>
+							<a class="link-social footer" href="">
+								<svg class="icon-social" width="20px" height="20px">
+									<use href="./images/icon/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link-social footer" href="">
+								<svg class="icon-social" width="20px" height="20px">
+									<use href="./images/icon/sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link-social footer" href="">
+								<svg class="icon-social" width="20px" height="20px">
+									<use href="./images/icon/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link-social footer" href="">
+								<svg class="icon-social" width="20px" height="20px">
+									<use href="./images/icon/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
