@@ -10,7 +10,7 @@
 /* TRANSITION */
 
 :root {
-	--duration: 2500ms;
+	--duration: 250ms;
 	--timming-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -184,6 +184,7 @@ img {
 }
 
 /* MODALKA */
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -195,6 +196,8 @@ img {
 	background-color: rgba(0, 0, 0, 0.2);
 
 	z-index: 3;
+
+	transition: var(--duration) var(--timming-function);
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -283,9 +286,10 @@ img {
 }
 
 .button-hero:hover {
-	transform: rotate(360deg);
+	transform: rotate(900deg);
 	transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* rotate(360deg); */
 
 /* ОСОБЕННОСТИ */
 
