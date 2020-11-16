@@ -54,6 +54,22 @@
 .list.address .link + .link {
 	margin-left: 50px;
 }
+.list.address.up {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+}
+.list.address.up .link {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+}
 .link-contacts {
 	font-weight: 500;
 	line-height: 1.14;
@@ -76,6 +92,9 @@
 	padding-bottom: 32px;
 
 	fill: $secondary-text-color;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding: 0;
+	}
 }
 .link-contacts.up:hover,
 .link-contacts.up:focus {

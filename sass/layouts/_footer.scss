@@ -85,13 +85,18 @@
 		text-align: center;
 	}
 }
-.footer-box h2,
-b {
+
+.footer-box h2 {
 	color: #fff;
 	margin-bottom: 20px;
-	display: block;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		text-align: center;
+	}
 }
+
 .footer-box b {
+	color: #fff;
+	display: block;
 	margin-bottom: 20px;
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		text-align: center;
