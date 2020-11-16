@@ -55,6 +55,9 @@
 	margin-left: 50px;
 }
 .list.address.up {
+	@media screen and (max-width: 1199px) {
+		display: block;
+	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		flex-wrap: wrap;
 		justify-content: flex-end;
