@@ -1,0 +1,29 @@
+/* CСЫЛКИ НА СОЦ СЕТИ */
+.list.social {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+.list.social li {
+	width: 44px;
+	height: 44px;
+}
+.list.social li + li {
+	margin-left: 10px;
+}
+.link-social {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	fill: #afb1b8;
+
+	transition: background-color $duration $timming-function, fill $duration $timming-function;
+}
+.link-social:hover,
+.link-social:focus {
+	background-color: $accent-color;
+	fill: #fff;
+}

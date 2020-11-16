@@ -1,0 +1,54 @@
+.features-head {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	margin-bottom: 10px;
+}
+.features-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.74;
+	letter-spacing: 0.03em;
+	color: $secondary-text-color;
+	text-transform: none;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.list.features {
+	margin-left: -30px;
+}
+.item-features {
+	margin-left: 30px;
+	flex-basis: calc(100% / 4 - 30px);
+}
+.section.features {
+	padding-bottom: 0px;
+}
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+
+.item-features::before {
+	content: "";
+	height: 120px;
+	display: block;
+	margin-bottom: 30px;
+
+	background-color: #f5f4fa;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-image: url(../images/icon/Vector.svg);
+}
+.item-features:nth-child(2)::before {
+	background-image: url(../images/icon/clock.svg);
+}
+.item-features:nth-child(3)::before {
+	background-image: url(../images/icon/Vector3.svg);
+}
+.item-features:nth-child(4)::before {
+	background-image: url(../images/icon/astronaut.svg);
+}

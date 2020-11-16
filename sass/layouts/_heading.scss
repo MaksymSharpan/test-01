@@ -1,0 +1,43 @@
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.position.heading {
+	margin: 0;
+	position: relative;
+}
+.position.heading::before {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 370px;
+	height: 70px;
+	background-color: #111111;
+	opacity: 0.5;
+	bottom: 0;
+	left: 0;
+}
+.heading-text {
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	position: absolute;
+	bottom: 27px;
+	// left: 50%;
+	width: 100%;
+
+	// transform: translate(-50%);
+}
+.list.heading {
+	margin-left: -30px;
+	margin-bottom: 0;
+}
+
+.item-heading {
+	width: 370px;
+	margin-left: 30px;
+	flex-basis: calc(100% / 3 - 30px);
+}

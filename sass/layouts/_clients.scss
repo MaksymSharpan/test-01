@@ -1,0 +1,35 @@
+.list.clients {
+	align-items: center;
+	justify-content: center;
+}
+.list.social.footer {
+	justify-content: start;
+}
+.link-clients {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 90px;
+
+	fill: #afb1b8;
+
+	border: 1px solid #afb1b8;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	transition: border-color $duration $timming-function, fill $duration $timming-function;
+}
+.item-clients {
+	margin-right: 30px;
+	width: calc((100% - 5 * 30px) / 6);
+}
+.link-clients:hover,
+.link-clients:focus {
+	fill: $accent-color;
+	border-color: $accent-color;
+}
+.item-clients:nth-child(6n) {
+	margin-right: 0px;
+}
