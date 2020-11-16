@@ -8,7 +8,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 
-	padding-top: 80px;
+	// padding-top: 80px;
 }
 h1,
 h2,
@@ -29,15 +29,23 @@ img {
 	padding: 0;
 }
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 .container {
-	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 .heading {
 	font-weight: 700;
@@ -55,8 +63,14 @@ img {
 .list.content,
 .list.clients,
 .list.address.up {
-	display: flex;
-	align-items: center;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	@media screen and(min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
 }
 .main {
 	color: #fff;

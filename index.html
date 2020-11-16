@@ -100,7 +100,7 @@
 
 			<!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
 
-			<section class="section">
+			<section class="section heading">
 				<div class="container">
 					<h2 class="heading">Чем мы занимаемся</h2>
 					<ul class="list heading">
@@ -349,7 +349,7 @@
 						</a>
 					</div>
 					<address>
-						<ul class="list">
+						<ul class="list footer">
 							<li class="link-down">
 								<a
 									href="https://goo.gl/maps/tncFJS4bmtnmpcFF8"
@@ -400,6 +400,7 @@
 						</li>
 					</ul>
 				</div>
+
 				<!-- <div class="aline-footer send"> -->
 
 				<div class="footer-box">
@@ -408,7 +409,8 @@
 						<input class="mail-footer" type="email" name="mail" placeholder="E-mail" />
 
 						<button class="button-footer" type="submit">
-							Подписаться<svg class="icon-footer" width="24px" height="24px">
+							Подписаться
+							<svg class="icon-footer" width="24px" height="24px">
 								<use href="./images/icon-2/sprite.svg#icon-send"></use>
 							</svg>
 						</button>
@@ -430,33 +432,24 @@
 					<b>Оставьте свои данные, мы вам перезвоним</b>
 					<div class="form-field">
 						<label for="name" class="form-label">Имя</label>
-						<input type="text" name="name" id="name" class="form-input" /><svg
-							class="icon-form"
-							width="18px"
-							height="18px"
-						>
+						<input type="text" name="name" id="name" class="form-input" />
+						<svg class="icon-form" width="18px" height="18px">
 							<use href="./images/icon-2/sprite.svg#icon-person"></use>
 						</svg>
 					</div>
 
 					<div class="form-field">
-						<label for="tel" class="form-label">Телефон</label
-						><input type="tel" name="tel" id="tel" class="form-input" /><svg
-							class="icon-form"
-							width="18px"
-							height="18px"
-						>
+						<label for="tel" class="form-label">Телефон</label>
+						<input type="tel" name="tel" id="tel" class="form-input" />
+						<svg class="icon-form" width="18px" height="18px">
 							<use href="./images/icon-2/sprite.svg#icon-phone"></use>
 						</svg>
 					</div>
 
 					<div class="form-field">
-						<label for="mail" class="form-label">Почта</label
-						><input type="email" name="mail" id="mail" class="form-input" /><svg
-							class="icon-form"
-							width="18px"
-							height="18px"
-						>
+						<label for="mail" class="form-label">Почта</label>
+						<input type="email" name="mail" id="mail" class="form-input" />
+						<svg class="icon-form" width="18px" height="18px">
 							<use href="./images/icon-2/sprite.svg#icon-email"></use>
 						</svg>
 					</div>
@@ -468,8 +461,10 @@
 
 					<div class="container-checkbox">
 						<label class="checkbox-label">
-							<input class="checkbox" type="checkbox" name="policy" /><span class="checkbox-icon"> </span> Соглашаюсь с
-							рассылкой и принимаю <span class="policy">Условия договора</span>
+							<input class="checkbox" type="checkbox" name="policy" />
+							<span class="checkbox-icon"></span>
+							Соглашаюсь с рассылкой и принимаю
+							<span class="policy">Условия договора</span>
 						</label>
 					</div>
 
@@ -480,7 +475,7 @@
 		<script src="./modal.js"></script>
 		<script>
 			;(() => {
-				document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
+				document.querySelector(".js-speaker-form").addEventListener("submit", e => {
 					e.preventDefault()
 
 					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))

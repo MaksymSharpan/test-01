@@ -1,4 +1,9 @@
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.section.heading {
+	@media screen and(max-width: 1199px) {
+		display: none;
+	}
+}
 
 .position.heading {
 	margin: 0;
@@ -32,12 +37,15 @@
 	// transform: translate(-50%);
 }
 .list.heading {
-	margin-left: -30px;
+	// margin-left: -30px;
 	margin-bottom: 0;
 }
 
 .item-heading {
-	width: 370px;
-	margin-left: 30px;
+	// width: 370px;
+	// margin-left: 30px;
 	flex-basis: calc(100% / 3 - 30px);
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
